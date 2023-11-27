@@ -32,6 +32,9 @@ console.log(`Sum odds: ${sum_odds}, Sum evens: ${sum_evens}`);
 
 (sum_odds > sum_evens) ? console.log('Sum odds > Sum evens') : console.log('Sum odds < Sum evens');
 
+// 6. finn differansen mellom odds og evens (største - minste). Konsoll logg resultatet
+console.log(`største - miste =`, (sum_odds > sum_evens) ? sum_odds - sum_evens : sum_evens - sum_odds) ;
+
 
 
 
