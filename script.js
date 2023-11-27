@@ -26,7 +26,12 @@ console.log(`# odds: ${odds.length}, # evens ${evens.length}`);
 
 
 const sum_callback = (acc, curr) => acc + curr;
-console.log(`Sum odds: ${odds.reduce(sum_callback)}, Sum evens: ${evens.reduce(sum_callback)}`);
+const sum_odds = odds.reduce(sum_callback)
+const sum_evens = evens.reduce(sum_callback)
+console.log(`Sum odds: ${sum_odds}, Sum evens: ${sum_evens}`);
+
+(sum_odds > sum_evens) ? console.log('Sum odds > Sum evens') : console.log('Sum odds < Sum evens');
+
 
 
 
